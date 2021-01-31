@@ -1,9 +1,9 @@
 # 19-navi
 Official Repository for DotSlash 4.0 Submission of Team 19: navi
 
-# spectre
+# proctor
 
-spectre is online exam proctoring system where The exponential rise in digitalization has made online exams a key aspect, which can be very susceptible to impersonation and cheating.
+proctor is online exam proctoring system where The exponential rise in digitalization has made online exams a key aspect, which can be very susceptible to impersonation and cheating.
 
 In the absence of a physical supervisor, students can resort to unfair means.
 
