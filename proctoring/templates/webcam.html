@@ -7,6 +7,45 @@
 
     <title>Live Streaming Demonstration</title>
 </head>
+<script>
+var SpeechRecognition = window.webkitSpeechRecognition;
+var recognition = new SpeechRecognition();
+var Content = '';
+
+recognition.continuous = true;
+
+recognition.onresult = function(event) {
+
+  var current = event.resultIndex;
+
+  var transcript = event.results[current][0].transcript;
+ 
+    Content += transcript;
+    console.log(Content);
+  
+};
+
+
+recognition.onstart = function() { 
+  console.log('Voice recognition is ON.');
+}
+
+recognition.onspeechend = function() {
+  console.log('No activity.');
+}
+
+recognition.onerror = function(event) {
+  if(event.error == 'no-speech') {
+    console.log('Try again.');  
+  }
+}
+
+
+  recognition.start();
+
+
+
+</script>
 <body>
 <div class="container">
     <div class="row">
@@ -15,7 +54,17 @@
             <img src="{{ url_for('video_feed') }}" width="100%">
           
         </div>
-        <button onclick="myFunction()"> stop </button>
+        <button onclick="f()"> stop </button>
+
+        <script>
+            function f() {
+                xhttp = new XMLHttpRequest();
+            xhttp.open("GET","/video_feed?stop=True&content="+Content, true);
+            xhttp.send();
+            xhttp.open("GET","/stop?content="+Content, true);
+            xhttp.send();
+            }
+        </script>
     </div>
 </div>
 </body>

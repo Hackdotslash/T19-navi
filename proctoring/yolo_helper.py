@@ -33,8 +33,9 @@ def count(image):
             classID = np.argmax(scores)
             confidence = scores[classID]
             if confidence > 0.65 and classID == 0:
-              
+                pass
                 print("human detected {}".format(confidence))
             if confidence > 0.65 and classID == 67:
+                pass
                 print("phone detected {}".format(confidence))
 # count(image)
