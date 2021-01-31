@@ -9,39 +9,15 @@ In the absence of a physical supervisor, students can resort to unfair means.
 
 With proper proctoring policies in place, online exams can be made cheat-proof and impersonation can be greatly reduced.
 
-## I) WEB EXTENSION
-
-### Installation:
-1. Clone the repo.
-2. Go to Chrome Browser and search chrome://extensions.
-3. Enable Developer mode on top-right corner.
-4. Click on Load unpacked and select 'web_ext' folder from the repo.
-5. Now the Web Extension is loaded.
-
 # Features:-
 
 ● It facilitates secure tests through continuous identity verification, and check the movement of object
 
 ● Prevention of copy-pasting and disabling users from switching tabs or opening other windows.
 
-● we made a admin page for supervisor so they can operate the students.
-
-●if camera found more than one object than student will be kicked by supervisor using admin page.
-
 ●we are using ai to detect student movements and eye eye recognition.
 
-● Deploying test on full-screen mode with screen sharing software disabled.
-
-● If the candidate deviates from his computer screen to open a reference material or seeks support from another person, he will be expelled from the test.
-
-
-Working:
-
-you can use this extension to your chrome browser and give restriction like googlemeet or zoom etc platforms.
-
-
-
-
+● we develop human detection and speech to font detection so if they speak during exam so it will be stored in text in database.
 
 
 # Conclusion:-
